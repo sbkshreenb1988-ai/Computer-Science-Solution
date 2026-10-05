@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Siddharaj Budha - Computer Science Solutions</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>📚 Computer Science Solutions</h1>
+<p>Chapter-wise Exercise Questions & Solutions</p>
+<p><strong>Siddharaj Budha</strong></p>
+</header>
+<nav>
+<a href="index.html" class="active">Home</a>
+<a href="chapter1.html">Chapter 1</a>
+<a href="chapter2.html">Chapter 2</a>
+<a href="chapter3.html">Chapter 3</a>
+<a href="chapter4.html">Chapter 4</a>
+<a href="chapter5.html">Chapter 5</a>
+</nav>
+<main class="container">
+<div class="card">
+<h2>Welcome</h2>
+<p>This website contains chapter-wise Computer Science exercise questions and solutions.</p>
+<p>Select a chapter below to read its solutions.</p>
+<input class="search" id="search" type="text" placeholder="Search chapter name...">
+<div class="home-grid" id="chapters"><a class="chapter-card" href="chapter1.html"><h3>Chapter 1</h3><p>View exercise questions and solutions →</p></a>
+<a class="chapter-card" href="chapter2.html"><h3>Chapter 2</h3><p>View exercise questions and solutions →</p></a>
+<a class="chapter-card" href="chapter3.html"><h3>Chapter 3</h3><p>View exercise questions and solutions →</p></a>
+<a class="chapter-card" href="chapter4.html"><h3>Chapter 4</h3><p>View exercise questions and solutions →</p></a>
+<a class="chapter-card" href="chapter5.html"><h3>Chapter 5</h3><p>View exercise questions and solutions →</p></a></div>
+</div>
+<div class="card">
+<h2>Chapters</h2>
+<ul>
+<li>Chapter 1 – Introduction to Computer</li>
+<li>Chapter 2 – Computer System</li>
+<li>Chapter 3 – Generation of Computer</li>
+<li>Chapter 4 – Types of Computer</li>
+<li>Chapter 5 – Windows Operating System</li>
+</ul>
+</div>
+</main>
+<footer>© 2026 Siddharaj Budha • Computer Science Solutions</footer>
+<script>
+const search=document.getElementById('search');
+search.addEventListener('input',()=>{
+ const q=search.value.toLowerCase();
+ document.querySelectorAll('.chapter-card').forEach(c=>{
+   c.style.display=c.innerText.toLowerCase().includes(q)?'block':'none';
+ });
+});
+</script>
+</body>
+</html>
